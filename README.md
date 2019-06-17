@@ -9,8 +9,8 @@ Wikipedia publishes database dumps of their content periodically. To run these s
 
 Example:
 
-    wget http://dumps.wikimedia.org/arwiki/20140831/arwiki-20140831-page.sql.gz
-    wget http://dumps.wikimedia.org/arwiki/20140831/arwiki-20140831-langlinks.sql.gz
+    wget https://dumps.wikimedia.org/frwiki/20190601/frwiki-20190601-page.sql.gz
+    wget https://dumps.wikimedia.org/frwiki/20190601/frwiki-20190601-langlinks.sql.gz
 
 #### Extract parallel titles
 
@@ -18,7 +18,8 @@ To extract the parallel corpus run the following where the first command line ar
 
 Example:
 
-    ./build-corpus.sh en arwiki-20140831 > titles.txt
+    ./build-corpus.sh cs frwiki-20190601 > titles-cs2fr.txt
+    ./build-corpus.sh zh frwiki-20190601 > titles-zh2fr.txt
 
 #### Language-specific filtering
 
